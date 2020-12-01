@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.come/ajax/libs/angularjs/1.6.9/angular.min.j"></script>
+<body ng-app="myApp">
+
+<div ng-controller="myCtrl"> 
+
+	<a href="#" ng-click="myFunc()">about</a>
+	
+	</div>
+	
+<script>
+angular.module('myApp', [])
+  .controller('myCtrl', ['$scope', function($scope) {
+	$scope.count = 0;
+	$scope.myFunc = function() {
+	  alert("You are on the About page");
+	};
+   }]);
+</script>
+</body>
+</html>
